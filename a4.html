@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="a4.css">
+<style>
+
+    * {box-sizing: border-box; 
+     overflow: hidden; 
+     }
+     
+    
+    input[type=text], select {
+     width: 70%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+     margin-top: 1px;
+     margin-bottom: 6px;
+     resize: vertical;
+     display: block;
+    }
+    
+    input[type=email], select{
+     width: 70%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+     margin-top: 1px;
+     margin-bottom: 6px;
+     resize: vertical;
+     display: block;
+    }
+    
+    input[type=tel], select{
+     width: 70%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+     margin-top: 1px;
+     margin-bottom: 6px;
+     resize: vertical;
+     display: block;
+    }
+    
+    input[type=submit] {
+     background-color: skyblue; 
+     color: black;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+    }
+    
+    input[type=reset] {
+     background-color: skyblue; 
+     color: black;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+    }
+    
+    input[type=radio]{
+     margin-top: 10px;
+     margin-bottom: 16px;
+    }
+    
+    input[type=checkbox]{
+     margin-top: 10px;
+     margin-bottom: 16px;
+    }
+    
+    input[type=submit]:hover {
+     background-color: white;
+    }
+    
+    input[type=reset]:hover {
+     background-color: white;
+    }
+    
+    .container {
+     border-radius: 10px;
+     background-color: chocolate;
+     padding: 20px;
+    }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <legend>Daljeet's Form</legend>
+<div class="container">
+<form action="/action_page.php" method="get" id="form">
+
+ <label for="fname">First Name :</label>
+ <input type="text" id="fname" name="firstname" placeholder="Name" required>
+
+ <label for="email">Email :</label>
+ <input type="email" name="email" pattern="[a-z0-9. _%+-]+@[a-z0-9. -]+\. [a-z]{2,}$" placeholder="Your Email..">
+
+ <label for="button">Gender :</label>
+ <input type="radio" id="button" name="button"checked >Male 
+<input type="radio" id="button" name="button">Female
+<br>
+
+<label for="country">Age :</label>
+ <select id="country" name="country">
+ <option value="young"> 18 </option>
+ <option value="adults"> 18 - 35</option>
+ <option value="mature adults"> 35 - 60</option>
+ <option value="old"> >60 </option>
+ </select>
+ 
+ <label for="address">Address :</label>
+ <input type="text" id="address" name="address" placeholder="Address, city, zip, province, country" style="height:50px">
+
+ <label for="CONTACT">Contact No :</label>
+ <input list="CONTACT" type="text" placeholder="Contact number 1">
+ <datalist id="CONTACT"> 
+ <option value="MOBILE    "> MOBILE </option>
+ <option value="OFFICE    "> OFFICE </option>
+ <option value="RESIDENCE    ">  RESIDENCE </option>
+ </datalist>
+ 
+
+ <input list="CONTACT" type="text" placeholder="Contact number 2">
+ <datalist id="CONTACT"> 
+ <option value="MOBILE    "> MOBILE </option>
+ <option value="OFFICE    "> OFFICE </option>
+ <option value="RESIDENCE    ">  RESIDENCE </option>
+ </datalist>
+
+ 
+ <label for="checkbox"> Favourite Colors : </label>
+  <h style="color:red">
+ <input type="checkbox" id="button" name="button">RED
+  <h style="color:blue">
+ <input type="checkbox" id="button" name="button">BLUE
+  <h style="color:yellow">
+ <input type="checkbox" id="button" name="button">YELLOW
+  <h style="color:green">
+ <input type="checkbox" id="button" name="button">GREEN
+  <h style="color:white">
+ <input type="checkbox" id="button" name="button">WHITE
+  <h style="color:black">
+ <input type="checkbox" id="button" name="button">BLACK
+  <h style="color:pink">
+ <input type="checkbox" id="button" name="button">PINK
+  <h style="color:purple">
+ <input type="checkbox" id="button" name="button">VOILET
+  <h style="color:brown">
+ <input type="checkbox" id="button" name="button">BROWN
+  <h style="color:orange">
+ <input type="checkbox" id="button" name="button">ORANGE
+ <br>
+
+ 
+ <input type="submit" value="Submit">
+ <input type="reset" value="clear">
+</fieldset>
+ </form>
+</div>
+</body>
+</html>

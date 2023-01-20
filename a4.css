@@ -1,0 +1,84 @@
+
+
+* {box-sizing: border-box; 
+ overflow: hidden; 
+ }
+ 
+
+input[type=text], select {
+ width: 70%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 6px;
+ box-sizing: border-box;
+ margin-top: 1px;
+ margin-bottom: 6px;
+ resize: vertical;
+ display: block;
+}
+
+input[type=email], select{
+ width: 70%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 6px;
+ box-sizing: border-box;
+ margin-top: 1px;
+ margin-bottom: 6px;
+ resize: vertical;
+ display: block;
+}
+
+input[type=tel], select{
+ width: 70%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 6px;
+ box-sizing: border-box;
+ margin-top: 1px;
+ margin-bottom: 6px;
+ resize: vertical;
+ display: block;
+}
+
+input[type=submit] {
+ background-color: skyblue; 
+ color: black;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+input[type=reset] {
+ background-color: skyblue; 
+ color: black;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+input[type=radio]{
+ margin-top: 10px;
+ margin-bottom: 16px;
+}
+
+input[type=checkbox]{
+ margin-top: 10px;
+ margin-bottom: 16px;
+}
+
+input[type=submit]:hover {
+ background-color: white;
+}
+
+input[type=reset]:hover {
+ background-color: white;
+}
+
+.container {
+ border-radius: 10px;
+ background-color: chocolate;
+ padding: 20px;
+}
