@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Viewer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="exit-button">
+        <button onclick="exitPage()">X</button>
+        
+    </div>
+	<div class="container">
+		<div class="gallery">
+			<div class="display">
+				<img id="currentImage" src="images/image1.jpg">
+			</div>
+			<div class="thumbnails">
+                <img src="image1.jpg"  onclick="setCurrentImage('image1.jpg')">
+				<img src="image2.jpg"  onclick="setCurrentImage('image2.jpg')">
+				<img src="image3.jpg"  onclick="setCurrentImage('image3.jpg')">
+				<img src="image4.jpg"  onclick="setCurrentImage('image4.jpg')">
+				<img src="image5.jpg"  onclick="setCurrentImage('image5.jpg')">
+				<img src="image6.jpg"  onclick="setCurrentImage('image6.jpg')">
+				<img src="image7.jpg"  onclick="setCurrentImage('image7.jpg')">
+				<img src="image8.jpg"  onclick="setCurrentImage('image8.jpg')">
+				<img src="image9.jpg"  onclick="setCurrentImage('image9.jpg')">
+				<img src="image10.jpg" onclick="setCurrentImage('image10.jpg')">
+			</div>
+			<div class="controls">
+				<button id="prev" onmouseover="changeImage('prev')">&#10094;</button>
+				<button id="next" onmouseover="changeImage('next')">&#10095;</button>
+			</div>
+		</div>
+		
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

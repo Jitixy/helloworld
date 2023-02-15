@@ -1,0 +1,105 @@
+body {
+	font-family: Arial, sans-serif;
+    background-color: #777;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0px;
+}
+
+.gallery {
+	margin-top: 50px;
+}
+
+.display {
+	text-align: center;
+    position: relative;
+}
+
+.display img {
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.thumbnails {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.thumbnails img {
+	margin: 5px;
+	cursor: pointer;
+	max-width: 8%;
+	max-height: 100px;
+	opacity: 0.5;
+	transition: opacity 0.3s;
+}
+
+.thumbnails img:hover {
+	opacity: 1;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 55%;
+    z-index: 1;
+}
+#prev {
+    order: 1;
+}
+
+#next {
+    order: 3;
+}
+
+#currentImage {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.controls button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 40px;
+	margin: 0 -33px;
+	transition: color 0.3s;
+}
+
+.controls button:hover {
+	color: #777;
+}
+
+.exit-button {
+	margin-top: 20px;
+	text-align: center;
+    margin-right: 0%;
+}
+
+.exit-button button {
+	background-color: #f44336;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+    
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+    margin-right: 0%;
+    margin-left: 90%;
+}
+
+.exit-button button:hover {
+	background-color: #d32f2f;
+}
